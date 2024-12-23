@@ -12,7 +12,7 @@
     <p>{{ $attributes->get('title') }}</p>
     @endif
 
-    <p>{{ $title}} --> has been declared on component class </p>
+    <p>{{ $title}} --> have been declared on component class </p>
 
 
 </div>

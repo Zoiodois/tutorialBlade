@@ -14,8 +14,19 @@
 
     <x-alerts.alert type="success">Sucesso</x-alerts.alert>
     <x-alerts.alert type="danger">Deu Ruim</x-alerts.alert>
-    <x-alerts.alert >Apenas Info - sem type</x-alerts.alert>
+    <x-alerts.alert >Apenas Info - sem type - sem color</x-alerts.alert>
+    <x-alerts.alert color="blue">Apenas Info $color blue</x-alerts.alert>
+    
+    {{-- Using classless components --}}
+    {{-- Althought it dosen't have class, need to be create via "php artisan make:component "name" --view" --}}
+    <x-class-less.flash message="message: success is everithing" color="orange" >Usando componente sem Classe </x-class-less.flash>
+    <x-class-less.flash message="message: Que deselegante" >Usando componente sem Classe. </x-class-less.flash>
+    <x-class-less.flash message="message: Usando valor color padrão" >Ohmmmm. </x-class-less.flash>
 
+
+    <x-class-less.flash :message="$mensagem" color="red">Ohmmmm. </x-class-less.flash>
+
+    
 
 
 
